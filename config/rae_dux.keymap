@@ -84,7 +84,7 @@
 	&trans       &kp M       &kp V       &kp C       &kp Z
 		&kp G       &kp P       &kp X       &kp K       &trans
 
-    &lt nav ESC		&lt num SPACE       &kp TAB
+    &kp TAB		&lt num SPACE       &lt nav ESC
         &lt fn RET      &lt sym SPACE	&kp BSPC
 
                 >;
