@@ -16,17 +16,13 @@
 #define fn 4
 #define _bt 5
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC>;
+&kscan0 {
+    debounce-period = <16>;
 };
 
 &lt {
     flavor = "balanced";
     tapping-term-ms = <1024>;
-};
-
-&kscan0 {
-    debounce-period = <16>;
 };
 
 /*                KEY POSITIONS
@@ -92,7 +88,6 @@
                 &kp RET      &lt sym SPACE		&lt fn BSP
                 >;
         };
-
 
         num {
             //             ┌─────┐							  		               ┌─────┐
