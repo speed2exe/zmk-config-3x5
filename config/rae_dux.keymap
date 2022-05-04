@@ -84,10 +84,9 @@
 	&trans       &kp M       &kp V       &kp C       &kp Z
 		&kp G       &kp P       &kp X       &kp K       &trans
 
-	//&lt nav TAB       &lt num SPACE		&kp ESC
-     //   &kp RET      &lt sym SPACE		&lt fn BSP
-                &trans      &trans      &trans
-                &trans      &trans      &trans
+    &kp TAB		&lt num SPACE       &lt nav ESC
+        &lt fn RET      &lt sym SPACE	&kp BSPC
+
                 >;
         };
 
