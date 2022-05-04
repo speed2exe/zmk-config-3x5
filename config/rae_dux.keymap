@@ -75,9 +75,8 @@
 //                       └─────┴─num─┴─nav─┘      └─fn──┴─sym─┴─────┘
 
             bindings = <
-// TODO: change back later
-	&kp K       &kp L       &kp R       &kp B       &trans
-		&trans        &kp Q       &kp U       &kp D       &kp K //TOD0: change back later
+	&kp W       &kp L       &kp R       &kp B       &trans
+		&trans        &kp Q       &kp U       &kp D       &kp J
 
 	&hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp F
 		&kp Y     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
