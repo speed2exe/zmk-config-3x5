@@ -60,32 +60,34 @@
     keymap {
         compatible = "zmk,keymap";
 
-        def {
 
-            //             ┌─────┐                                                 ┌─────┐
-            //       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-            //       │  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  D  │
-            // ┌─────┼─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┼─────┐
-            // │  W  │  H  ├─SFT─┤  T  │  F  │                         │  Y  │  A  ├─SFT─┤  O  │  J  │
-            // ├─────┼─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┼─────┤
-            // │  S  │  M  ├─────┤  C  │  Z  │                         │  G  │  P  ├─────┤  K  │  I  │
-            // ├─CTL─┼─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┼─CTL─┤
-            // │     │               ┌─────┬─────┬─────┐      ┌─────┬─────┬─────┐			   │     │
-            // └─────┘               │ TAB │ SPC │ ESC │      │ RET │ SPC │ BSP │      		   └─────┘
-            //                       └─nav─┴─num─┴─────┘      └─────┴─sym─┴─fn──┘
+        def {
+//             ┌─────┐                                                 ┌─────┐
+//       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
+//       │  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  D  │
+// ┌─────┼─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┼─────┐
+// │  W  │  H  ├─SFT─┤  T  │  F  │                         │  Y  │  A  ├─SFT─┤  O  │  J  │
+// ├─────┼─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┼─────┤
+// │  S  │  M  ├─────┤  C  │  Z  │                         │  G  │  P  ├─────┤  K  │  I  │
+// ├─CTL─┼─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┼─CTL─┤
+// │     │               ┌─────┬─────┬─────┐      ┌─────┬─────┬─────┐			   │     │
+// └─────┘               │ TAB │ SPC │ ESC │      │ RET │ SPC │ BSP │      		   └─────┘
+//                       └─nav─┴─num─┴─────┘      └─────┴─sym─┴─fn──┘
 
             bindings = <
-                &kp W       &kp L       &kp R       &kp B       &trans
-                &trans        &kp Q       &kp U       &kp D       &kp J
+	&kp W       &kp L       &kp R       &kp B       &trans
+		&trans        &kp Q       &kp U       &kp D       &kp J
 
-                &hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp F
-                &kp Y     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
+	&hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &kp F
+		&kp Y     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
 
-                &trans       &kp M       &kp V       &kp C       &kp Z
-                &kp G       &kp P       &kp X       &kp K       &trans
+	&trans       &kp M       &kp V       &kp C       &kp Z
+		&kp G       &kp P       &kp X       &kp K       &trans
 
-                &lt nav TAB       &lt num SPACE		&kp ESC
-                &kp RET      &lt sym SPACE		&lt fn BSP
+	//&lt nav TAB       &lt num SPACE		&kp ESC
+     //   &kp RET      &lt sym SPACE		&lt fn BSP
+                &trans      &trans      &trans
+                &trans      &trans      &trans
                 >;
         };
 
