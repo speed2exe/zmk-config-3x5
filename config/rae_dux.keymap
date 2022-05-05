@@ -169,7 +169,7 @@
                 &kp DEL     &kp LEFT      &kp DOWN     &kp RIGHT      &kp K_MUTE
 
                 &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3       &out OUT_USB
-                &trans       &kp PG_DN       &kp PG_UP        &kp HOME       &END
+                &trans       &kp PG_DN       &kp PG_UP        &kp HOME       &kp END
 
                 &trans      &trans      &trans
                 &trans      &trans      &trans
