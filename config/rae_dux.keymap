@@ -155,9 +155,9 @@
             // ┌─────┼─────┤ SFT ├─────┼─────┤                  	   ├─────┼─────┤  ↓  ├─────┼─────┐
             // │ BtC │ ALT ├─────┤ GUI │ Ble │                  	   │ Del │  ←  ├─────┤  →  │ VlD │
             // ├─────┼─────┤ Bt2 ├─────┼─────┤                  	   ├─────┼─────┤ PgU ├─────┼─────┤
-            // │ CTL │ Bt1 ├─────┤ Bt3 │ Usb │                  	   │ Hom │ PgD ├─────┤ End │ Mut │
+            // │ CTL │ Bt1 ├─────┤ Bt3 │ Usb │                  	   │     │ PgD ├─────┤ Hom │ Mut │
             // ├─────┼─────┘     └─────┴─────┘              		   └─────┴─────┘     └─────┼─────┤
-            // │ Bt0 │               ┌─────┬─────┬─────┐      ┌─────┬─────┬─────┐			   │     │
+            // │ Bt0 │               ┌─────┬─────┬─────┐      ┌─────┬─────┬─────┐			   │ End │
             // └─────┘               │     │     │     │      │     │     │     │      		   └─────┘
             //                       └─────┴─────┴─────┘      └─────┴─────┴─────┘
 
@@ -169,7 +169,7 @@
                 &kp DEL     &kp LEFT      &kp DOWN     &kp RIGHT      &kp K_MUTE
 
                 &bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3       &out OUT_USB
-                &kp HOME       &kp PG_DN       &kp PG_UP        &kp END       &trans
+                &trans       &kp PG_DN       &kp PG_UP        &kp HOME       &END
 
                 &trans      &trans      &trans
                 &trans      &trans      &trans
