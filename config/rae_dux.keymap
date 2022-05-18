@@ -12,9 +12,12 @@
 #define def 0
 #define num 1
 #define sym 2
-#define alt 3
-#define nav 4
-#define fn 5
+//#define alt 3
+//#define nav 4
+//#define fn 5
+
+#define nav 3
+#define fn 4
 
 //&kscan0 {
 //    debounce-period = <16>;
@@ -114,7 +117,7 @@
                 &trans     &kp N4      &kp N5     &kp N6      &kp SEMI
 
                 &trans       &caps_word      &kp CLCK      &trans       &trans
-                &trans       &kp N1       &kp N2       &kp N3       &trans
+                &trans       &kp N1       &kp N2       &kp N3       &kp G
 
                 &trans      &trans      &trans
                 &trans      &trans      &trans
@@ -153,35 +156,35 @@
         };
 
 
-        alt {
-//             ┌─────┐                                                 ┌─────┐
-//       ┌─────┤  {  ├─────┬─────┐                         ┌─────┬─────┤  *  ├─────┐
-// ┌─────┤  ~  ├─────┤  }  │     │                         │     │  &  ├─────┤  (  ├─────┐
-// │     ├─────┤  <  ├─────┼─────┤                         ├─────┼─────┤  %  ├─────┤  )  │
-// ├─────┤  "  ├─────┤  >  │     │                         │     │  $  ├─────┤  ^  ├─────┤
-// │  ?  ├─────┤  _  ├─────┼─────┤                         ├─────┼─────┤  @  ├─────┤  :  │
-// ├─────┤  |  ├─────┤  +  │     │                         │     │  !  ├─────┤  #  ├─────┤
-// │  Z  ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  G  │
-// └─────┘               ┌─────┐                              ┌─────┐			   └─────┘
-//                       │     ├─────┐                  ┌─────┤     │
-//                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
-//                             └─────┤     │      │     ├─────┘
-//                                   └─────┘      └─────┘
-
-            bindings = <
-                &trans     &kp TILDE       &kp LEFT_BRACE      &RIGHT_BRACE      &trans
-                &trans        &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR
-
-                &kp QMARK        &kp DQT      &kp LT      &kp GT      &trans
-                &trans     &kp DLLR      &kp PRCNT     &kp CARET      &kp COLON
-
-                &kp Z       &kp PIPE      &kp UNDER      &kp PLUS       &trans
-                &trans       &kp EXCL       &kp AT       &kp HASH       &kp G
-
-                &trans      &trans      &trans
-                &trans      &trans      &trans
-                >;
-        };
+//        alt {
+////             ┌─────┐                                                 ┌─────┐
+////       ┌─────┤  {  ├─────┬─────┐                         ┌─────┬─────┤  *  ├─────┐
+//// ┌─────┤  ~  ├─────┤  }  │     │                         │     │  &  ├─────┤  (  ├─────┐
+//// │     ├─────┤  <  ├─────┼─────┤                         ├─────┼─────┤  %  ├─────┤  )  │
+//// ├─────┤  "  ├─────┤  >  │     │                         │     │  $  ├─────┤  ^  ├─────┤
+//// │  ?  ├─────┤  _  ├─────┼─────┤                         ├─────┼─────┤  @  ├─────┤  :  │
+//// ├─────┤  |  ├─────┤  +  │     │                         │     │  !  ├─────┤  #  ├─────┤
+//// │  Z  ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  G  │
+//// └─────┘               ┌─────┐                              ┌─────┐			   └─────┘
+////                       │     ├─────┐                  ┌─────┤     │
+////                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
+////                             └─────┤     │      │     ├─────┘
+////                                   └─────┘      └─────┘
+//
+//            bindings = <
+//                &trans     &kp TILDE       &kp LEFT_BRACE      &RIGHT_BRACE      &trans
+//                &trans        &kp AMPS      &kp ASTRK      &kp LPAR      &kp RPAR
+//
+//                &kp QMARK        &kp DQT      &kp LT      &kp GT      &trans
+//                &trans     &kp DLLR      &kp PRCNT     &kp CARET      &kp COLON
+//
+//                &kp Z       &kp PIPE      &kp UNDER      &kp PLUS       &trans
+//                &trans       &kp EXCL       &kp AT       &kp HASH       &kp G
+//
+//                &trans      &trans      &trans
+//                &trans      &trans      &trans
+//                >;
+//        };
 
 
         nav {
