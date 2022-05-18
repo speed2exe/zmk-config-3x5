@@ -76,10 +76,8 @@
 //                             └─num─┤ esc │      │ ret ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-	//&kp W       &kp L       &kp R       &kp B       &sl alt
-	&kp W       &kp L       &kp R       &kp B       &trans
-		//&sl alt        &kp Q       &kp U       &kp D       &kp J
-		&trans        &kp Q       &kp U       &kp D       &kp J
+	&kp W       &kp L       &kp R       &kp B       &sl alt
+		&sl alt        &kp Q       &kp U       &kp D       &kp J
 
 	&hm_l LCTRL S     &hm_l LALT H      &hm_l LSHFT N     &hm_l LGUI T     &sl num
 		&sl sym     &hm_r RGUI A      &hm_r RSHFT E     &hm_r RALT O      &hm_r RCTRL I
