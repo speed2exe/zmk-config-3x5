@@ -20,6 +20,11 @@
 //    debounce-period = <16>;
 //};
 
+&sk {
+	release-after-ms = <1024>;
+	quick-release;
+};
+
 &lt {
     flavor = "balanced";
     tapping-term-ms = <1024>;
