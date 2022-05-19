@@ -163,10 +163,10 @@
 	&trans        &trans       &trans       &trans       &trans
 		&trans       &kp LS(P)       &kp LS(X)       &kp LS(K)       &kp LS(Y)
 
-	&kp CLCK        &trans       &trans
-        &kp trans      &sl syms		&sl sym
-        //&trans      &trans		&trans
-        //&trans      &trans		&trans
+	//&kp CLCK        &trans       &trans
+    //    &kp trans      &sl syms		&sl sym
+        &trans      &trans		&trans
+        &trans      &trans		&trans
 
                 >;
         };
