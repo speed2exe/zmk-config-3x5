@@ -130,8 +130,10 @@
 	&kp RS(F)       &kp RS(M)       &kp RS(V)       &kp RS(C)       &trans
 		&trans        &trans       &trans       &trans       &trans
 
-    &sl num		&sl nums       &trans
-        &trans      &trans		&caps_word
+    // &sl num		&sl nums       &trans
+    //     &trans      &trans		&caps_word
+        &trans      &trans		&trans
+        &trans      &trans		&trans
 
                 >;
         };
@@ -161,8 +163,10 @@
 	&trans        &trans       &trans       &trans       &trans
 		&trans       &kp LS(P)       &kp LS(X)       &kp LS(K)       &kp LS(Y)
 
-	&kp CLCK        &trans       &trans
-        &kp trans      &sl syms		&sl sym
+	// &kp CLCK        &trans       &trans
+    //     &kp trans      &sl syms		&sl sym
+        &trans      &trans		&trans
+        &trans      &trans		&trans
 
                 >;
         };
