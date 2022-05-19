@@ -163,10 +163,10 @@
 	&trans        &trans       &trans       &trans       &trans
 		&trans       &kp LS(P)       &kp LS(X)       &kp LS(K)       &kp LS(Y)
 
-	// &kp CLCK        &trans       &trans
-    //     &kp trans      &sl syms		&sl sym
-        &trans      &trans		&trans
-        &trans      &trans		&trans
+	&kp CLCK        &trans       &trans
+        &kp trans      &sl syms		&sl sym
+        //&trans      &trans		&trans
+        //&trans      &trans		&trans
 
                 >;
         };
@@ -232,20 +232,6 @@
                 &trans      &trans      &trans
                 &trans      &trans      &trans
                 >;
-
-            // bindings = <
-            //     &trans     &trans       &trans      &trans      &trans
-            //     &trans        &kp N7      &kp N8      &kp N9      &kp N0
-
-            //     &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
-            //     &trans     &kp N4      &kp N5     &kp N6      &kp SEMI
-
-            //     &trans       &trans      &trans      &trans       &trans
-            //     &trans       &kp N1       &kp N2       &kp N3       &trans
-
-            //     &trans      &trans      &trans
-            //     &trans      &kp BSPC      &trans
-            //     >;
         };
 
 
