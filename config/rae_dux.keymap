@@ -13,11 +13,11 @@
 #define upl 1
 #define upr 2
 #define num 3
-#define nums 5
-#define sym 6
-#define syms 7
-#define nav 8
-#define fn 9
+#define nums 4
+#define sym 5
+#define syms 6
+#define nav 7
+#define fn 8
 
 //&kscan0 {
 //    debounce-period = <16>;
