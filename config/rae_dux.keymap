@@ -13,9 +13,9 @@
 #define upl 1
 #define upr 2
 #define num 3
-#define numS 4
+#define nums 4
 #define sym 5
-#define symS 6
+#define syms 6
 #define nav 7
 #define fn 8
 
@@ -115,7 +115,7 @@
 // │  F  ├─────┘     └─────┴─────┘                          └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                               ┌─────┐			    └─────┘
 //                       │ num ├─────┐                   ┌─────┤ CpW │
-//                       └─────┤ numS├─────┐       ┌─────┤     ├─────┘
+//                       └─────┤ nums├─────┐       ┌─────┤     ├─────┘
 //                             └─────┤     │       │     ├─────┘
 //                                   └─────┘       └─────┘
             bindings = <
@@ -128,7 +128,7 @@
 	&kp RS(F)       &kp RS(M)       &kp RS(V)       &kp RS(C)       &trans
 		&trans        &trans       &trans       &trans       &trans
 
-    &sl num		&sl numS       &trans
+    &sl num		&sl nums       &trans
         &trans      &trans		&caps_word
 
                 >;
@@ -146,7 +146,7 @@
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  Y  │
 // └─────┘               ┌─────┐                              ┌─────┐			   └─────┘
 //                       │ CAP ├─────┐                  ┌─────┤ sym │
-//                       └─────┤     ├─────┐      ┌─────┤ symS├─────┘
+//                       └─────┤     ├─────┐      ┌─────┤ syms├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
@@ -160,7 +160,7 @@
 		&trans       &kp LS(P)       &kp LS(X)       &kp LS(K)       &kp LS(Y)
 
 	&kp CLCK        &trans       &trans
-        &kp trans      &sl symS		&sl sym
+        &kp trans      &sl syms		&sl sym
 
                 >;
         };
@@ -197,7 +197,7 @@
         };
 
 
-        numS {
+        nums {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤     ├─────┬─────┐                         ┌─────┬─────┤  *  ├─────┐
 // ┌─────┤     ├─────┤     │     │                         │     │  &  ├─────┤  (  ├─────┐
@@ -226,7 +226,6 @@
 //                &trans      &trans      &trans
 //                &trans      &trans      &trans
 //                >;
-//        };
 
             bindings = <
                 &trans     &trans       &trans      &trans      &trans
@@ -275,7 +274,7 @@
         };
 
 
-        symS {
+        syms {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  {  ├─────┬─────┐                         ┌─────┬─────┤     ├─────┐
 // ┌─────┤  ~  ├─────┤  }  │     │                         │     │     ├─────┤     ├─────┐
@@ -303,7 +302,6 @@
         //        &trans      &trans      &trans
         //        &trans      &trans      &trans
         //        >;
-        //};
             bindings = <
                 &trans     &trans       &trans      &trans      &trans
                 &trans        &kp N7      &kp N8      &kp N9      &kp N0
