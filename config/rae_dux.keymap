@@ -211,19 +211,35 @@
 //                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
+//
+
+//            bindings = <
+//                &trans     &trans       &trans      &trans      &trans
+//                &trans        &kp RS(N7)      &kp RS(N8)      &kp RS(N9)      &kp RS(N0)
+//
+//                &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
+//                &trans     &kp RS(N4)      &kp RS(N5)     &kp RS(N6)      &kp RS(SEMI)
+//
+//                &trans       &trans      &trans      &trans       &trans
+//                &trans       &kp RS(N1)       &kp RS(N2)       &kp RS(N3)       &trans
+//
+//                &trans      &trans      &trans
+//                &trans      &trans      &trans
+//                >;
+//        };
 
             bindings = <
                 &trans     &trans       &trans      &trans      &trans
-                &trans        &kp RS(N7)      &kp RS(N8)      &kp RS(N9)      &kp RS(N0)
+                &trans        &kp N7      &kp N8      &kp N9      &kp N0
 
                 &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
-                &trans     &kp RS(N4)      &kp RS(N5)     &kp RS(N6)      &kp RS(SEMI)
+                &trans     &kp N4      &kp N5     &kp N6      &kp SEMI
 
                 &trans       &trans      &trans      &trans       &trans
-                &trans       &kp RS(N1)       &kp RS(N2)       &kp RS(N3)       &trans
+                &trans       &kp N1       &kp N2       &kp N3       &trans
 
                 &trans      &trans      &trans
-                &trans      &trans      &trans
+                &trans      &kp BSP      &trans
                 >;
         };
 
@@ -274,18 +290,32 @@
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
 
+        //    bindings = <
+        //        &trans      &kp RS(GRAVE)       &kp RS(LBKT)      &kp RS(RBKT)       &trans
+        //        &trans       &trans      &trans      &trans       &trans
+
+        //        &kp RS(SLASH)      &kp RS(SQT)     &kp RS(COMMA)      &kp RS(DOT)       &trans
+        //        &trans		&kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
+
+        //        &trans      &kp RS(BSLH)      &kp RS(MINUS)      &kp RS(EQUAL)       &trans
+        //        &trans     &trans       &trans      &trans      &trans
+
+        //        &trans      &trans      &trans
+        //        &trans      &trans      &trans
+        //        >;
+        //};
             bindings = <
-                &trans      &kp RS(GRAVE)       &kp RS(LBKT)      &kp RS(RBKT)       &trans
-                &trans       &trans      &trans      &trans       &trans
-
-                &kp RS(SLASH)      &kp RS(SQT)     &kp RS(COMMA)      &kp RS(DOT)       &trans
-                &trans		&kp RGUI        &kp RSHFT        &kp RALT        &kp RCTRL
-
-                &trans      &kp RS(BSLH)      &kp RS(MINUS)      &kp RS(EQUAL)       &trans
                 &trans     &trans       &trans      &trans      &trans
+                &trans        &kp N7      &kp N8      &kp N9      &kp N0
+
+                &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
+                &trans     &kp N4      &kp N5     &kp N6      &kp SEMI
+
+                &trans       &trans      &trans      &trans       &trans
+                &trans       &kp N1       &kp N2       &kp N3       &trans
 
                 &trans      &trans      &trans
-                &trans      &trans      &trans
+                &trans      &kp BSP      &trans
                 >;
         };
 
