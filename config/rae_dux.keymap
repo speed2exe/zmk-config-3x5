@@ -130,11 +130,8 @@
 	&kp RS(F)       &kp RS(M)       &kp RS(V)       &kp RS(C)       &trans
 		&trans        &trans       &trans       &trans       &trans
 
-    // &sl num		&sl nums       &trans
-    //     &trans      &trans		&caps_word
-        &trans      &trans		&trans
-        &trans      &trans		&trans
-
+    &sl num		&sl nums       &trans
+        &trans      &trans		&caps_word
                 >;
         };
 
@@ -165,7 +162,6 @@
 
 	&kp CLCK        &trans       &trans
         &trans      &sl syms		&sl sym
-
                 >;
         };
 
