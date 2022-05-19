@@ -97,11 +97,8 @@
 	&kp F       &kp M       &kp V       &kp C       &trans
 		&trans       &kp P       &kp X       &kp K       &kp Y
 
-    // &sl upr		&lt num SPACE       &lt nav ESC
-    //     &lt fn RET      &lt sym SPACE		&sl upl
-        &trans      &trans		&trans
-        &trans      &trans		&trans
-
+    &sl upr		&lt num SPACE       &lt nav ESC
+        &lt fn RET      &lt sym SPACE		&sl upl
                 >;
         };
 
