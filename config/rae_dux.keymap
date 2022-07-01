@@ -170,29 +170,17 @@
 //                                   └─────┘      └─────┘
 
             bindings = <
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
+                &trans      &trans     &trans      &trans      &trans
+                &trans      &kp AMPS   &kp ASTRK   &kp LPAR    &kp RPAR
 
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
+                &kp LCTRL   &kp LALT   &kp LSHFT   &kp LGUI    &trans
+                &kp LS(G)   &kp DLLR   &kp PRCNT   &kp CARET   &kp COLON
 
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
+                &trans      &trans     &trans      &trans       &trans
+                &trans      &kp EXCL   &kp AT      &kp HASH     &trans
 
-                &trans &trans &trans
-                &trans &trans &trans
-
-                // &trans     &trans       &trans      &trans      &trans
-                // &trans     &kp AMPS     &kp ASTRK   &kp LPAR    &kp RPAR
-
-                // &kp LCTRL   &kp LALT     &kp LSHFT   &kp LGUI    &trans
-                // &kp LS(G)   &kp DLLR     &kp PRCNT   &kp CARET   &kp COLON
-
-                // &trans       &trans      &kp trans    &trans       &trans
-                // &trans       &kp EXCL    &kp AT       &kp HASH     &trans
-
-                // &trans      &trans      &trans
-                // &trans      &trans      &trans
+                &trans      &trans     &trans
+                &trans      &trans     &trans
                 >;
         };
 
