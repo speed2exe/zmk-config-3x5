@@ -114,8 +114,8 @@
                 &kp LCTRL     &kp LALT       &kp LSHFT     &kp LGUI     &trans
                 &kp G         &kp N4      &kp N5     &kp N6      &kp SEMI
 
-                &trans       &caps_word      &kp CLCK      &trans       &trans
-                &trans       &kp N1       &kp N2       &kp N3       &caps_word
+                &trans       &trans      &trans      &trans       &trans
+                &trans       &kp N1      &kp N2      &kp N3       &caps_word
 
                 &trans      &trans      &trans
                 &trans      &trans      &trans
