@@ -202,30 +202,17 @@
 //                                   └─────┘      └─────┘
 
             bindings = <
+                &trans      &kp TILDE   &kp LBRC    &kp RBRC   &trans
+                &trans      &trans      &trans      &trans     &trans
 
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
+                &kp QMARK    &kp DQT    &kp LT      &kp GT     &kp RS(Z)
+                &trans       &kp RGUI   &kp RSHFT   &kp RALT   &kp RCTRL
 
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
+                &trans     &kp PIPE     &kp UNDER   &kp PLUS   &trans
+                &trans     &trans       &trans      &trans     &trans
 
-                &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans
-
-                &trans &trans &trans
-                &trans &trans &trans
-
-                // &trans      &kp TILDE   &kp LBRC    &kp RBRC    &trans
-                // &trans      &trans      &trans      &trans      &trans
-
-                // &kp QMARK    &kp DQT     &kp LT       &kp GT        &kp RS(Z)
-                // &trans       &kp RGUI    &kp RSHFT    &kp RALT      &kp RCTRL
-
-                // &trans     &kp PIPE     &kp UNDER      &kp PLUS    &trans
-                // &trans     &trans       &key_repeat    &trans      &trans
-
-                // &trans      &trans      &trans
-                // &trans      &trans      &trans
+                &trans      &trans      &trans
+                &trans      &trans      &trans
                 >;
         };
 
