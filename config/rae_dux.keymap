@@ -34,7 +34,7 @@
                   │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
                   │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
                   ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
-                          ╰────────────╯ ╰────────────╯
+						  ╰────────────╯ ╰────────────╯
  */
 
 / {
@@ -87,8 +87,8 @@
                 &kp F           &kp M           &kp V           &kp C          &sk LSHIFT
                 &sk RSHIFT      &kp P           &kp X           &kp K          &kp Y
 
-                &kp TAB         &lt nav SPACE   &sl num
-                &lt fn RET      &lt fn SPACE    &sl sym
+                &sl num         &lt nav SPACE   &kp ESC
+                &kp RET         &lt fn SPACE    &sl sym
                 >;
         };
 
@@ -205,7 +205,7 @@
                 &trans      &kp TILDE   &kp LBRC    &kp RBRC   &trans
                 &trans      &trans      &trans      &trans     &trans
 
-                &kp QMARK   &kp DQT    &kp LT      &kp GT     &kp trans
+                &kp QMARK   &kp DQT    &kp LT      &kp GT     &trans
                 &trans      &kp RGUI   &kp RSHFT   &kp RALT   &kp RCTRL
 
                 &trans      &kp PIPE     &kp UNDER   &kp PLUS   &trans
