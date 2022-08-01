@@ -12,24 +12,24 @@
 #define def 0
 #define num 1
 #define sym 2
-#define num_s 3
-#define sym_s 4
-#define nav 5
-#define fn 6
-#define _bt 7
+// #define num_s 3
+// #define sym_s 4
+#define nav 3
+#define fn 4
+#define _bt 5
 
-//&kscan0 {
-//    debounce-period = <16>;
-//};
+// &kscan0 {
+//     debounce-period = <16>;
+// };
 
 &lt {
     flavor = "balanced";
     tapping-term-ms = <1024>;
 };
 
-&sk {
-    quick-release;
-};
+// &sk {
+//     quick-release;
+// };
 
 /*                KEY POSITIONS
 
@@ -70,11 +70,11 @@
         def {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-// ┌─────┤  L  ├─────┤  B  │num_s│                         │sym_s│  Q  ├─────┤  D  ├─────┐
+// ┌─────┤  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  D  ├─────┐
 // │  W  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  J  │
-// ├─────┤  H  ├─SFT─┤  T  │ num │                         │ sym │  A  ├─SFT─┤  O  ├─────┤
+// ├─────┤  H  ├─SFT─┤  T  │  Z  │                         │  G  │  A  ├─SFT─┤  O  ├─────┤
 // │  S  ├─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
-// ├─CTL─┤  M  ├─────┤  C  │l_sft│                         │r_sft│  P  ├─────┤  K  ├─CTL─┤
+// ├─CTL─┤  M  ├─────┤  C  │     │                         │     │  P  ├─────┤  K  ├─CTL─┤
 // │  F  ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  Y  │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │ TAB ├─────┐                  ┌─────┤ BSP │
@@ -82,14 +82,14 @@
 //                             └─num─┤ ESC │      │ RET ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-                &kp W           &kp L           &kp R           &kp B          &sl num_s
-                &sl sym_s       &kp Q           &kp U           &kp D          &kp J
+                &kp W           &kp L           &kp R           &kp B          &trans
+                &trans          &kp Q           &kp U           &kp D          &kp J
 
-                &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &sl num
-                &sl sym         &hm_r RGUI A    &hm_r RSHFT E   &hm_r RALT O   &hm_r RCTRL I
+                &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
+                &kp G           &hm_r RGUI A    &hm_r RSHFT E   &hm_r RALT O   &hm_r RCTRL I
 
-                &kp F           &kp M           &kp V           &kp C          &sk LSHIFT
-                &sk RSHIFT      &kp P           &kp X           &kp K          &kp Y
+                &kp F           &kp M           &kp V           &kp C          &trans
+                &trans          &kp P           &kp X           &kp K          &kp Y
 
                 &kp TAB         &lt num SPACE   &lt nav ESC
                 &lt fn RET      &lt sym SPACE   &kp BSPC
@@ -105,7 +105,7 @@
 // ├─────┤ ALT ├─────┤ GUI │     │                         │     │  4  ├─────┤  6  ├─────┤
 // │ CTL ├─────┤     ├─────┼─────┤                         ├─────┼─────┤  2  ├─────┤  ;  │
 // ├─────┤     ├─────┤     │     │                         │     │  1  ├─────┤  3  ├─────┤
-// │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  g  │
+// │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │     ├─────┐                  ┌─────┤     │
 //                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
@@ -119,7 +119,7 @@
                 &trans      &kp N4     &kp N5      &kp N6     &kp SEMI
 
                 &trans      &trans     &trans      &trans     &trans
-                &trans      &kp N1     &kp N2      &kp N3     &kp G
+                &trans      &kp N1     &kp N2      &kp N3     &trans
 
                 &trans      &trans     &trans
                 &trans      &trans     &trans
@@ -131,7 +131,7 @@
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  [  ├─────┬─────┐                         ┌─────┬─────┤     ├─────┐
 // ┌─────┤  `  ├─────┤  ]  │     │                         │     │     ├─────┤     ├─────┐
-// │  z  ├─────┤  ,  ├─────┼─────┤                         ├─────┼─────┤ SFT ├─────┤     │
+// │     ├─────┤  ,  ├─────┼─────┤                         ├─────┼─────┤ SFT ├─────┤     │
 // ├─────┤  '  ├─────┤  .  │     │                         │     │ GUI ├─────┤ ALT ├─────┤
 // │  /  ├─────┤  -  ├─────┼─────┤                         ├─────┼─────┤     ├─────┤ CTL │
 // ├─────┤  \  ├─────┤  =  │     │                         │     │     ├─────┤     ├─────┤
@@ -142,7 +142,7 @@
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
-                &kp Z       &kp GRAVE   &kp LBKT      &kp RBKT    &trans
+                &trans      &kp GRAVE   &kp LBKT      &kp RBKT    &trans
                 &trans      &trans      &trans        &trans      &trans
 
                 &kp SLASH   &kp SQT     &kp COMMA     &kp DOT     &trans
@@ -157,6 +157,7 @@
         };
 
 
+/*
         num_s {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤     ├─────┬─────┐                         ┌─────┬─────┤  *  ├─────┐
@@ -185,8 +186,10 @@
                 &trans      &trans     &trans
                 >;
         };
+*/
 
 
+/*
         sym_s {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  {  ├─────┬─────┐                         ┌─────┬─────┤     ├─────┐
@@ -215,6 +218,7 @@
                 &trans      &trans      &trans
                 >;
         };
+*/
 
 
         nav {
