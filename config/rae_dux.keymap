@@ -184,6 +184,7 @@
                 &trans      &trans     &trans
                 &trans      &trans     &trans
                 >;
+        };
 
 
         sym_s {
