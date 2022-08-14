@@ -83,13 +83,13 @@
 //                             └─num─┤ ESC │      │ RET ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-                &kp W           &kp L           &kp R           &kp B          &to qwerty
+                &kp W           &kp L           &kp R           &kp B          &tog qwerty
                 &trans          &kp Q           &kp U           &kp D          &kp J
 
                 &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
                 &kp G           &hm_r RGUI A    &hm_r RSHFT E   &hm_r RALT O   &hm_r RCTRL I
 
-                &kp F           &kp M           &kp V           &kp C          &to qwerty
+                &kp F           &kp M           &kp V           &kp C          &tog qwerty
                 &trans          &kp P           &kp X           &kp K          &kp Y
 
                 &kp TAB         &lt num SPACE   &lt nav ESC
@@ -306,7 +306,7 @@
                 &kp Z     &kp X      &kp C       &kp V      &kp B
                 &kp N     &kp M      &kp COMMA   &kp DOT    &kp SLASH
 
-                &trans    &trans     &to def
+                &trans    &trans     &tog qwerty
                 &trans    &trans     &trans
                 >;
         };
