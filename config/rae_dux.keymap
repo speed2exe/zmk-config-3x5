@@ -17,6 +17,7 @@
 #define nav 3
 #define fn 4
 #define _bt 5
+#define qwerty 6
 
 // &kscan0 {
 //     debounce-period = <16>;
@@ -82,7 +83,7 @@
 //                             └─num─┤ ESC │      │ RET ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-                &kp W           &kp L           &kp R           &kp B          &trans
+                &kp W           &kp L           &kp R           &kp B          &to qwerty
                 &trans          &kp Q           &kp U           &kp D          &kp J
 
                 &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
@@ -226,7 +227,7 @@
 //       ┌─────┤     ├─────┬─────┐                         ┌─────┬─────┤  ↑  ├─────┐
 // ┌─────┤     ├─────┤     │     │                         │     │ Ins ├─────┤ VlU ├─────┐
 // │ BtC ├─────┤ SFT ├─────┼─────┤                         ├─────┼─────┤  ↓  ├─────┤ VlD │
-// ├─────┤ ALT ├─────┤ GUI │ Ble │                         │     │  ←  ├─────┤  →  ├─────┤
+// ├─────┤ ALT ├─────┤ GUI │ Ble │                         │ Del │  ←  ├─────┤  →  ├─────┤
 // │ CTL ├─────┤ Bt2 ├─────┼─────┤                         ├─────┼─────┤ PgU ├─────┤ Mut │
 // ├─────┤ Bt1 ├─────┤ Bt3 │ Usb │                         │     │ PgD ├─────┤ Hom ├─────┤
 // │ Bt0 ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤ End │
@@ -276,6 +277,36 @@
                 &trans    &trans     &trans       &trans    &trans
 
                 &trans    &trans     &trans
+                &trans    &trans     &trans
+                >;
+        };
+
+
+        qwerty {
+//             ┌─────┐                                                 ┌─────┐
+//       ┌─────┤  E  ├─────┬─────┐                         ┌─────┬─────┤  I  ├─────┐
+// ┌─────┤  W  ├─────┤  R  │  T  │                         │  Y  │  U  ├─────┤  O  ├─────┐
+// │  Q  ├─────┤  D  ├─────┼─────┤                         ├─────┼─────┤  K  ├─────┤  P  │
+// ├─────┤  S  ├─────┤  F  │  G  │                         │  H  │  J  ├─────┤  L  ├─────┤
+// │  A  ├─────┤  C  ├─────┼─────┤                         ├─────┼─────┤  ,  ├─────┤  ;  │
+// ├─────┤  X  ├─────┤  V  │  B  │                         │  N  │  M  ├─────┤  .  ├─────┤
+// │  Z  ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  /  │
+// └─────┘               ┌─────┐                              ┌─────┐              └─────┘
+//                       │     ├─────┐                  ┌─────┤     │
+//                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
+//                             └─────┤ def │      │     ├─────┘
+//                                   └─────┘      └─────┘
+            bindings = <
+                &kp Q     &kp W      &kp E       &kp R      &kp T
+                &kp Y     &kp U      &kp I       &kp O      &kp P
+
+                &kp A     &kp S      &kp D       &kp F      &kp G
+                &kp H     &kp J      &kp K       &kp L      &kp SEMI
+
+                &kp Z     &kp X      &kp C       &kp V      &kp B
+                &kp N     &kp M      &kp COMMA   &kp DOT    &kp SLASH
+
+                &trans    &trans     &to def
                 &trans    &trans     &trans
                 >;
         };
