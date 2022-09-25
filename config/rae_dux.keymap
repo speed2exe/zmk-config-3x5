@@ -17,7 +17,7 @@
 #define nav 3
 #define fn 4
 #define _bt 5
-#define qwerty 6
+// #define qwerty 6
 
 // &kscan0 {
 //     debounce-period = <16>;
@@ -70,30 +70,30 @@
 
         def {
 //             ┌─────┐                                                 ┌─────┐
-//       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-// ┌─────┤  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  D  ├─────┐
-// │  W  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  J  │
-// ├─────┤  H  ├─SFT─┤  T  │  Z  │                         │  G  │  A  ├─SFT─┤  O  ├─────┤
-// │  S  ├─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
-// ├─CTL─┤  M  ├─────┤  C  │     │                         │     │  P  ├─────┤  K  ├─CTL─┤
-// │  F  ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤  Y  │
+//       ┌─────┤  H  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
+// ┌─────┤  L  ├─────┤  B  │     │                         │     │  W  ├─────┤  O  ├─────┐
+// │  F  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  Y  │
+// ├─────┤  R  ├─SFT─┤  T  │  Z  │                         │  Q  │  D  ├─SFT─┤  A  ├─────┤
+// │  S  ├─ALT─┤  B  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
+// ├─CTL─┤  P  ├─────┤  M  │  K  │                         │  C  │  G  ├─────┤  J  ├─CTL─┤
+// │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │ TAB ├─────┐                  ┌─────┤ BSP │
 //                       └─────┤ SPC ├─────┐      ┌─────┤ SPC ├─────┘
 //                             └─num─┤ ESC │      │ RET ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-                &kp W           &kp L           &kp R           &kp B          &kp A
-                &trans          &kp Q           &kp U           &kp D          &kp J
+                &kp F           &kp L           &kp H           &kp B          &trans
+                &trans          &kp W           &kp U           &kp O          &kp Y
 
-                &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
-                &kp G           &hm_r RGUI A    &hm_r RSHFT E   &hm_r RALT O   &hm_r RCTRL I
+                &hm_l LCTRL S   &hm_l LALT R    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
+                &kp Q           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
 
-                &kp F           &kp M           &kp V           &kp C          &trans
-                &trans          &kp P           &kp X           &kp K          &kp Y
+                &trans          &kp P           &kp B           &kp M          &kp K
+                &kp C           &kp G           &kp X           &kp J          &trans
 
-                &kp TAB         &lt num SPACE   &lt nav ESC
-                &lt fn RET      &lt sym SPACE   &kp BSPC
+                &trans          &lt num SPACE   &lt nav ESC
+                &lt fn RET      &lt sym SPACE   &trans
                 >;
         };
 
@@ -109,7 +109,7 @@
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │     ├─────┐                  ┌─────┤     │
-//                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
+//                       └─────┤ TAB ├─────┐      ┌─────┤ BSP ├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
@@ -122,8 +122,8 @@
                 &trans      &trans     &trans      &trans     &trans
                 &trans      &kp N1     &kp N2      &kp N3     &trans
 
-                &trans      &trans     &trans
-                &trans      &trans     &trans
+                &trans      &kp TAB     &trans
+                &trans      &kp BSPC    &trans
                 >;
         };
 
