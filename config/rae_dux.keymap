@@ -83,7 +83,7 @@
 //                             └─num─┤ ESC │      │ RET ├─sym─┘
 //                                   └─nav─┘      └─fn──┘
             bindings = <
-                &kp F           &kp L           &kp H           &kp B          &trans
+                &kp F           &kp L           &kp H           &kp V          &trans
                 &trans          &kp W           &kp U           &kp O          &kp Y
 
                 &hm_l LCTRL S   &hm_l LALT R    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
@@ -109,7 +109,7 @@
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │     ├─────┐                  ┌─────┤     │
-//                       └─────┤ TAB ├─────┐      ┌─────┤ BSP ├─────┘
+//                       └─────┤     ├─────┐      ┌─────┤ BSP ├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
@@ -122,7 +122,7 @@
                 &trans      &trans     &trans      &trans     &trans
                 &trans      &kp N1     &kp N2      &kp N3     &trans
 
-                &trans      &kp TAB     &trans
+                &trans      &trans      &trans
                 &trans      &kp BSPC    &trans
                 >;
         };
@@ -139,7 +139,7 @@
 // │ CAP ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │     ├─────┐                  ┌─────┤     │
-//                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
+//                       └─────┤ TAB ├─────┐      ┌─────┤     ├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
@@ -152,7 +152,7 @@
                 &kp CAPS    &kp BSLH    &kp MINUS     &kp EQUAL   &trans
                 &trans      &trans      &trans        &trans      &trans
 
-                &trans      &trans      &trans
+                &trans      &kp TAB     &trans
                 &trans      &trans      &trans
                 >;
         };
