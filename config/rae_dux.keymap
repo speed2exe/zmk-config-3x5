@@ -78,10 +78,10 @@
 // ├─CTL─┤  P  ├─────┤  M  │  K  │                         │  C  │  G  ├─────┤  J  ├─CTL─┤
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
-//                       │ TAB ├─────┐                  ┌─────┤ BSP │
-//                       └─────┤ SPC ├─────┐      ┌─────┤ SPC ├─────┘
-//                             └─num─┤ ESC │      │ RET ├─sym─┘
-//                                   └─nav─┘      └─fn──┘
+//                       │ SPC ├─────┐                  ┌─────┤ SPC │
+//                       └─num─┤ ESC ├─────┐      ┌─────┤ RET ├─sym─┘
+//                             └─nav─┤     │      │     ├─fn──┘
+//                                   └─────┘      └─────┘
             bindings = <
                 &kp F           &kp L           &kp H           &kp V          &trans
                 &trans          &kp W           &kp U           &kp O          &kp Y
@@ -92,8 +92,8 @@
                 &trans          &kp P           &kp B           &kp M          &kp K
                 &kp C           &kp G           &kp X           &kp J          &trans
 
-                &trans          &lt num SPACE   &lt nav ESC
-                &lt fn RET      &lt sym SPACE   &trans
+                &lt num SPACE   &lt nav ESC     &trans
+                &trans          &lt fn RET      &lt sym SPACE
                 >;
         };
 
@@ -108,8 +108,8 @@
 // ├─────┤     ├─────┤     │     │                         │     │  1  ├─────┤  3  ├─────┤
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
-//                       │     ├─────┐                  ┌─────┤     │
-//                       └─────┤     ├─────┐      ┌─────┤ BSP ├─────┘
+//                       │     ├─────┐                  ┌─────┤ BSP │
+//                       └─────┤     ├─────┐      ┌─────┤     ├─────┘
 //                             └─────┤     │      │     ├─────┘
 //                                   └─────┘      └─────┘
             bindings = <
@@ -123,7 +123,7 @@
                 &trans      &kp N1     &kp N2      &kp N3     &trans
 
                 &trans      &trans      &trans
-                &trans      &kp BSPC    &trans
+                &trans      &trans      &kp BSPC
                 >;
         };
 
@@ -152,7 +152,7 @@
                 &kp CAPS    &kp BSLH    &kp MINUS     &kp EQUAL   &trans
                 &trans      &trans      &trans        &trans      &trans
 
-                &trans      &kp TAB     &trans
+                &kp TAB     &trans      &trans
                 &trans      &trans      &trans
                 >;
         };
