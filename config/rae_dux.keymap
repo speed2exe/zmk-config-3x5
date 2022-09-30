@@ -71,9 +71,9 @@
         def {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-// ┌─────┤  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  A  ├─────┐
+// ┌─────┤  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  O  ├─────┐
 // │  W  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  J  │
-// ├─────┤  H  ├─SFT─┤  T  │  Z  │                         │  G  │  D  ├─SFT─┤  O  ├─────┤
+// ├─────┤  H  ├─SFT─┤  T  │  Z  │                         │  G  │  D  ├─SFT─┤  A  ├─────┤
 // │  S  ├─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
 // ├─CTL─┤  M  ├─────┤  C  │  F  │                         │  Y  │  P  ├─────┤  K  ├─CTL─┤
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
@@ -84,10 +84,10 @@
 //                                   └─────┘      └─────┘
             bindings = <
                 &kp W           &kp L           &kp R           &kp B          &trans
-                &trans          &kp Q           &kp U           &kp A          &kp J
+                &trans          &kp Q           &kp U           &kp O          &kp J
 
                 &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
-                &kp G           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT O   &hm_r RCTRL I
+                &kp G           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
 
                 &trans          &kp M           &kp V           &kp C          &kp F
                 &kp Y           &kp P           &kp X           &kp K          &trans
