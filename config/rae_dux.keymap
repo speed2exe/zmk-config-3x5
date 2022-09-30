@@ -70,12 +70,12 @@
 
         def {
 //             ┌─────┐                                                 ┌─────┐
-//       ┌─────┤  R  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-// ┌─────┤  L  ├─────┤  B  │     │                         │     │  Q  ├─────┤  O  ├─────┐
-// │  W  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  J  │
-// ├─────┤  H  ├─SFT─┤  T  │  Z  │                         │  G  │  D  ├─SFT─┤  A  ├─────┤
-// │  S  ├─ALT─┤  V  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
-// ├─CTL─┤  M  ├─────┤  C  │  F  │                         │  Y  │  P  ├─────┤  K  ├─CTL─┤
+//       ┌─────┤  H  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
+// ┌─────┤  L  ├─────┤  V  │     │                         │     │  P  ├─────┤  O  ├─────┐
+// │  F  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  Y  │
+// ├─────┤  R  ├─SFT─┤  T  │  Z  │                         │  Q  │  D  ├─SFT─┤  A  ├─────┤
+// │  S  ├─ALT─┤  B  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
+// ├─CTL─┤  C  ├─────┤  M  │  W  │                         │  K  │  G  ├─────┤  J  ├─CTL─┤
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │ SPC ├─────┐                  ┌─────┤ SPC │
@@ -83,14 +83,14 @@
 //                             └─nav─┤     │      │     ├─fn──┘
 //                                   └─────┘      └─────┘
             bindings = <
-                &kp W           &kp L           &kp R           &kp B          &trans
-                &trans          &kp Q           &kp U           &kp O          &kp J
+                &kp F           &kp L           &kp H           &kp V          &trans
+                &trans          &kp P           &kp U           &kp O          &kp Y
 
-                &hm_l LCTRL S   &hm_l LALT H    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
-                &kp G           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
+                &hm_l LCTRL S   &hm_l LALT R    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
+                &kp Q           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
 
-                &trans          &kp M           &kp V           &kp C          &kp F
-                &kp Y           &kp P           &kp X           &kp K          &trans
+                &trans          &kp C           &kp B           &kp M          &kp W
+                &kp K           &kp G           &kp X           &kp J          &trans
 
                 &lt num SPACE   &lt nav ESC     &trans
                 &trans          &lt fn RET      &lt sym SPACE
