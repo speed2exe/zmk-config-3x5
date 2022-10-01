@@ -71,11 +71,11 @@
         def {
 //             ┌─────┐                                                 ┌─────┐
 //       ┌─────┤  H  ├─────┬─────┐                         ┌─────┬─────┤  U  ├─────┐
-// ┌─────┤  L  ├─────┤  V  │     │                         │     │  P  ├─────┤  O  ├─────┐
+// ┌─────┤  L  ├─────┤  W  │     │                         │     │  P  ├─────┤  O  ├─────┐
 // │  F  ├─────┤  N  ├─────┼─────┤                         ├─────┼─────┤  E  ├─────┤  Y  │
 // ├─────┤  R  ├─SFT─┤  T  │  Z  │                         │  Q  │  D  ├─SFT─┤  A  ├─────┤
 // │  S  ├─ALT─┤  B  ├─GUI─┼─────┤                         ├─────┼─GUI─┤  X  ├─ALT─┤  I  │
-// ├─CTL─┤  C  ├─────┤  M  │  W  │                         │  K  │  G  ├─────┤  J  ├─CTL─┤
+// ├─CTL─┤  C  ├─────┤  M  │  V  │                         │  K  │  G  ├─────┤  J  ├─CTL─┤
 // │     ├─────┘     └─────┴─────┘                         └─────┴─────┘     └─────┤     │
 // └─────┘               ┌─────┐                              ┌─────┐              └─────┘
 //                       │ SPC ├─────┐                  ┌─────┤ SPC │
@@ -83,13 +83,13 @@
 //                             └─nav─┤     │      │     ├─fn──┘
 //                                   └─────┘      └─────┘
             bindings = <
-                &kp F           &kp L           &kp H           &kp V          &trans
+                &kp F           &kp L           &kp H           &kp W          &trans
                 &trans          &kp P           &kp U           &kp O          &kp Y
 
                 &hm_l LCTRL S   &hm_l LALT R    &hm_l LSHFT N   &hm_l LGUI T   &kp Z
                 &kp Q           &hm_r RGUI D    &hm_r RSHFT E   &hm_r RALT A   &hm_r RCTRL I
 
-                &trans          &kp C           &kp B           &kp M          &kp W
+                &trans          &kp C           &kp B           &kp M          &kp V
                 &kp K           &kp G           &kp X           &kp J          &trans
 
                 &lt num SPACE   &lt nav ESC     &trans
